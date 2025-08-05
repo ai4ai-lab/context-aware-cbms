@@ -1,10 +1,10 @@
 # Context-Aware Concept Bottleneck Models
 
-This repository contains code for the following paper: [INSERT LINK]
+> This repository contains code for the following paper: [LINK TO BE ADDED]
 
 **Improving ARDS Diagnosis Through Context-Aware Concept Bottleneck Models**
 * This is the joint work of [Anish Narain](https://github.com/anish-narain), [Ritam Majumdar](https://github.com/Ritam-M), [Nikita Narayanan](https://github.com/NikitaN65), [Dominic Marshall](https://github.com/Dom-Marshall), [Sonali Parbhoo](https://github.com/sonaliparbhoo).
-* This paper was accepted in Machine Learning for Healthcare 2025
+* Accepted at **Machine Learning for Healthcare (MLHC) 2025**
 
 ## Abstract
 
@@ -18,6 +18,6 @@ Large, publicly available clinical datasets have emerged as a novel resource for
 | Folder | Description |
 | ---- | ---- |
 | `mimic-data-processing` | We used the [MIMIC-IV v2.2](https://physionet.org/content/mimiciv/2.2/) database. Due to access restrictions under the PhysioNet Credentialed Health Data Use Agreement, the datasets used for the CBM and LLM code cannot be shared. However, the scripts used to generate them are available in this folder. We accessed MIMIC-IV on [Google BigQuery](https://mimic.mit.edu/docs/gettingstarted/cloud/bigquery/) for dataset creation. The original patient cohort (referred to as `ards_cohort`) was selected by a physician using criteria detailed in Section 3 of the paper.|
-| `llm-code` | The code is executed on a combination of discharge summaries, radiology reports, and echocardiography interpretations associated with each patient, all sourced from [MIMIC-IV Note](https://physionet.org/content/mimic-iv-note/2.2/). It is implemented as a Python notebook and includes 8 separate files, one for each of the 8 LLM concept labels. The notebook was run on Google Colab and requires a GPU. |
+| `llm-code` | The LLM code is executed on a combination of discharge summaries, radiology reports, and echocardiography interpretations associated with each patient, all sourced from [MIMIC-IV Note](https://physionet.org/content/mimic-iv-note/2.2/). It is implemented as a Python notebook and includes 8 separate files, one for each of the 8 LLM concept labels. The notebook was run on Google Colab and requires a GPU. |
 | `cbm-code` ||
 
