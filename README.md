@@ -1,11 +1,10 @@
 # Context-Aware Concept Bottleneck Models
 
-This repository contains code for the following paper:
+This repository contains code for the following paper: [INSERT LINK]
 
-> ### Improving ARDS Diagnosis Through Context-Aware Concept Bottleneck Models
-> Authors: Anish Narain, Ritam Majumdar, Nikita Narayanan, Dominic Marshall, Sonali Parbhoo
->
-> Imperial College London
+**Improving ARDS Diagnosis Through Context-Aware Concept Bottleneck Models**
+* This is the joint work of [Anish Narain](https://github.com/anish-narain), [Ritam Majumdar](https://github.com/Ritam-M), [Nikita Narayanan](https://github.com/NikitaN65), [Dominic Marshall](https://github.com/Dom-Marshall), [Sonali Parbhoo](https://github.com/sonaliparbhoo).
+* This paper was accepted in Machine Learning for Healthcare 2025
 
 ## Abstract
 
