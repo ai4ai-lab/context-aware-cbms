@@ -1,6 +1,6 @@
 WITH ards_cohort AS (
   SELECT stay_id  -- Change to stay_id instead of hadm_id
-  FROM `mimic-big-query.ards_dataset.new_ards_cohort`
+  FROM `mimic-big-query.ards_dataset.ards_cohort`
 ),
 sofa_cohort AS (
   -- Retrieve SOFA data without joining with icustay_detail, using stay_id directly

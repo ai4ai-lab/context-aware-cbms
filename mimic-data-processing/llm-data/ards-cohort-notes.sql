@@ -3,7 +3,7 @@ WITH ards_subjects AS (
         hadm_id,
         subject_id
     FROM
-        `mimic-big-query.ards_dataset.new_ards_cohort` 
+        `mimic-big-query.ards_dataset.ards_cohort` 
 ),
 aggregated_reports AS (
     SELECT
@@ -42,7 +42,7 @@ discharge_notes AS (
         discharge.note_id AS discharge_note_id,
         discharge.text AS discharge_text
     FROM 
-        `mimic-big-query.ards_dataset.new_ards_cohort` ards
+        `mimic-big-query.ards_dataset.ards_cohort` ards
     JOIN 
         `physionet-data.mimiciv_note.discharge` discharge
     ON 
@@ -54,7 +54,7 @@ radiology_notes AS (
         STRING_AGG(CAST(radiology.note_id AS STRING), ', ') AS radiology_note_ids,
         STRING_AGG(radiology.text, ' ||| ') AS radiology_texts
     FROM 
-        `mimic-big-query.ards_dataset.new_ards_cohort` ards
+        `mimic-big-query.ards_dataset.ards_cohort` ards
     JOIN 
         `physionet-data.mimiciv_note.radiology` radiology
     ON 
@@ -71,7 +71,7 @@ SELECT
     STRING_AGG(DISTINCT CAST(ar.study_id AS STRING), ', ') AS ecd_study_ids,
     STRING_AGG(ar.report_text, ' ||| ') AS ecd_combined_reports
 FROM
-    `mimic-big-query.ards_dataset.new_ards_cohort` a
+    `mimic-big-query.ards_dataset.ards_cohort` a
 LEFT JOIN
     discharge_notes d ON a.hadm_id = d.hadm_id
 LEFT JOIN

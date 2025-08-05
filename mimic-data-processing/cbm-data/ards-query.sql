@@ -11,7 +11,7 @@ cohort AS (
     stay_id,
     subject_id,
     ARDS_DIAGNOSIS
-  FROM `mimic-big-query.ards_dataset.new_ards_cohort`
+  FROM `mimic-big-query.ards_dataset.ards_cohort`
 ),
 
 --------------------------------------------------------------------------------

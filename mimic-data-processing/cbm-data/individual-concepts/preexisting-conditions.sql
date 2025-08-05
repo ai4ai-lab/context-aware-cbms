@@ -64,7 +64,7 @@ respiratory_illnesses AS (
 -- Step 3: Filter for Cohort-Specific Patients
 cohort AS (
     SELECT hadm_id, ARDS_DIAGNOSIS
-    FROM `mimic-big-query.ards_dataset.new_ards_cohort`
+    FROM `mimic-big-query.ards_dataset.ards_cohort`
 ),
 
 -- Step 4: Generate Final Output with Columns for Each Respiratory Illness Category

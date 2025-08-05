@@ -1,7 +1,7 @@
 WITH cohort AS (
   SELECT
     stay_id  -- Change to stay_id instead of hadm_id
-  FROM `mimic-big-query.ards_dataset.new_ards_cohort`
+  FROM `mimic-big-query.ards_dataset.ards_cohort`
 ),
 norepi_agg AS (
   SELECT
