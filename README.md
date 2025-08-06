@@ -7,7 +7,7 @@
   title={Improving ARDS Diagnosis Through Context-Aware Concept Bottleneck Models},
   author={Narain, Anish and Majumdar, Ritam and Narayanan, Nikita and Marshall, Dominic and Parbhoo, Sonali},
   journal={In Machine Learning for Healthcare. PMLR},
-  pages={126:1-31},
+  pages={298:1-31},
   year={2025},
 }
 ```
