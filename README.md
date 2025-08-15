@@ -1,6 +1,9 @@
 # Context-Aware Concept Bottleneck Models
 
 > If you find this code helpful, please cite our paper
+
+https://arxiv.org/abs/2508.09719 
+
 ## 📚 Citation
 ```bibtex
 @article{narain2025improving,
